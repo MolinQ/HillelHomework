@@ -11,7 +11,7 @@ function deleteArraySimbol(text, deleteSimbol) {
     return textArray.join('');
 }
 
-let result = deleteArraySimbol(text.split(''), deleteSimbol.replace(' ', '').split(''));
+let result = deleteArraySimbol(text.split(''), deleteSimbol.replace(/ /g, '').split(''));
 
 console.log(result);
 
