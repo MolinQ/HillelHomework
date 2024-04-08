@@ -11,7 +11,7 @@ function deleteNumber(array, item) {
   for (let i = 0; i < array.length; i++) {
     while (array.includes(item[i])) {
       array.splice(array.indexOf(item[i]), 1);
-    }
+    } 
   }
   return array;
 }
