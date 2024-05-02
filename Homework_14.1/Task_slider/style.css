@@ -1,127 +1,156 @@
 .slider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f6f5fa;
+  border-radius: 10px;
+  width: 900px;
+}
+
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 li {
-    display: none;
-    list-style-type: none;
-    animation: SwapForm 0.5s ease-out;
-    opacity: 0;
+  display: none;
+  list-style-type: none;
+  animation: SwapForm 0.5s ease-out;
+  opacity: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .active {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .slider__elements {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    background-color:#f6f5fa ;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f6f5fa;
+  border-radius: 10px;
 }
 
 .slider__elements__text--teamTag {
-    color: #3d9de1;
-    font-size: 15px;
-    font-weight: 600;
+  color: #3d9de1;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .arrow {
-    border: solid #3d9de1;
-    border-width: 0 1.8px 1.8px 0;
-    display: inline-block;
-    padding: 2.5px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
+  border: solid #3d9de1;
+  border-width: 0 1.8px 1.8px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
-  .slider__elements__text--title {
-    color: red;
-  }
+.slider__elements__text--title {
+  color: red;
+}
 
-  .slider__elements__text--jobTitle,
-  .slider__elements__text--teamName{
-    font-size: 12px;
-    color: #b2b2bb;
-  }
+.slider__elements__text--jobTitle,
+.slider__elements__text--teamName {
+  font-size: 12px;
+  color: #b2b2bb;
+}
 
-.slider__next,.slider__prev {
-
+.slider__next,
+.slider__prev {
+  margin-top: 100px;
 }
 
 .switch-arrow {
-    border: solid #3d9de1;
-    border-width: 0 1.8px 1.8px 0;
-    display: inline-block;
-    padding: 2.5px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  border: solid #3d9de1;
+  border-width: 0 1.8px 1.8px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .slider__prev {
-    width: 40px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #3d9de1;
-    position: relative;
-    cursor: pointer;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3d9de1;
+  position: relative;
+  cursor: pointer;
 }
 
 .slider__prev::before {
-    content: '';
-    position: absolute;
-    top: 37%;
-    left: 42%;
-    width: 0;
-    height: 0;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 42%;
+  width: 0;
+  height: 0;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
-  
+
 .slider__next {
-    width: 40px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #3d9de1;
-    position: relative;
-    cursor: pointer;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3d9de1;
+  position: relative;
+  cursor: pointer;
 }
 
 .slider__next::before {
-    content: '';
-    position: absolute;
-    top: 37%;
-    left: 32%;
-    width: 0;
-    height: 0;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 37%;
+  left: 32%;
+  width: 0;
+  height: 0;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 @keyframes SwapForm {
-    from {
-        opacity: 0;
-        display: block;
-    }
-    to {
-        display: block;
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+    display: block;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #3d9de182;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  animation: SwapForm 0.5s ease-out;
+}
+
+.dot.active {
+  background-color: #3d9de1;
+}
+
+.dot__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }

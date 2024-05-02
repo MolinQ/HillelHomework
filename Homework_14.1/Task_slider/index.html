@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <ul class="js--slider--elements">
+  </head>
+  <body>
+    <div class="slider__wrapper">
+      <span class="slider__prev js--slider__prev"></span>
+      <ul class="js--slider--elements">
         <li class="active">
-            <div class="slider ">
-                <span class="slider__prev js--slider__prev"></span>
-                <div class="slider__elements">
-                    <div class="slider__elements__img">
-                        <img src="img/coz.jpg" alt="" style="width: 150px;border-radius:10px 0px 0px 10px;">
-                    </div>
-                    <div class="slider__elements__text">
-                        <p class="slider__elements__text--teamTag">Cossacks<span class="arrow"></span></p>
-                        <h1 class="slider__elements__text--title">Cossacks is a game from a Ukrainian studio about RPG battles </h1>
-                        <p class="slider__elements__text--jobTitle">development studio</p>
-                        <p class="slider__elements__text--teamName">GSC Game World</p>
-                    </div>
-                </div>
-                <span class="slider__next js--slider__next"></span>
+          <div class="slider">
+            <div class="slider__elements">
+              <div class="slider__elements__img">
+                <img
+                  src="img/coz.jpg"
+                  alt=""
+                  style="width: 150px; border-radius: 10px 0px 0px 10px"
+                />
+              </div>
+              <div class="slider__elements__text">
+                <p class="slider__elements__text--teamTag">
+                  Cossacks<span class="arrow"></span>
+                </p>
+                <h1 class="slider__elements__text--title">
+                  Cossacks is a game from a Ukrainian studio about RPG battles
+                </h1>
+                <p class="slider__elements__text--jobTitle">
+                  development studio
+                </p>
+                <p class="slider__elements__text--teamName">GSC Game World</p>
+              </div>
             </div>
+          </div>
         </li>
         <li>
-            <div class="slider">
-                <span class="slider__prev js--slider__prev"></span>
-                <div class="slider__elements">
-                    <div class="slider__elements__img">
-                        <img src="img/stalker-md.jpg" alt="" style="width: 150px;border-radius:10px 0px 0px 10px;">
-                    </div>
-                    <div class="slider__elements__text">
-                        <p class="slider__elements__text--teamTag">Stalker<span class="arrow"></span></p>
-                        <h1 class="slider__elements__text--title">A game about survival in Pripyat after the explosion of a nuclear reactor</h1>
-                        <p class="slider__elements__text--jobTitle">development studio</p>
-                        <p class="slider__elements__text--teamName">GSC Game World</p>
-                    </div>
-                </div>
-                <span class="slider__next js--slider__next"></span>
+          <div class="slider">
+            <div class="slider__elements">
+              <div class="slider__elements__img">
+                <img
+                  src="img/stalker-md.jpg"
+                  alt=""
+                  style="width: 150px; border-radius: 10px 0px 0px 10px"
+                />
+              </div>
+              <div class="slider__elements__text">
+                <p class="slider__elements__text--teamTag">
+                  Stalker<span class="arrow"></span>
+                </p>
+                <h1 class="slider__elements__text--title">
+                  A game about survival in Pripyat after the explosion of a
+                  nuclear reactor
+                </h1>
+                <p class="slider__elements__text--jobTitle">
+                  development studio
+                </p>
+                <p class="slider__elements__text--teamName">GSC Game World</p>
+              </div>
             </div>
+          </div>
         </li>
         <li>
-            <div class="slider">
-                <span class="slider__prev js--slider__prev"></span>
-                <div class="slider__elements">
-                    <div class="slider__elements__img">
-                        <img src="img/metro.jpg" alt="" style="width: 150px;border-radius:10px 0px 0px 10px;">
-                    </div>
-                    <div class="slider__elements__text">
-                        <p class="slider__elements__text--teamTag">Metro<span class="arrow"></span></p>
-                        <h1 class="slider__elements__text--title">A game about human survival after a nuclear war</h1>
-                        <p class="slider__elements__text--jobTitle">development studio</p>
-                        <p class="slider__elements__text--teamName">4A Games</p>
-                    </div>
-                </div>
-                <span class="slider__next js--slider__next"></span>
+          <div class="slider">
+            <div class="slider__elements">
+              <div class="slider__elements__img">
+                <img
+                  src="img/metro.jpg"
+                  alt=""
+                  style="width: 150px; border-radius: 10px 0px 0px 10px"
+                />
+              </div>
+              <div class="slider__elements__text">
+                <p class="slider__elements__text--teamTag">
+                  Metro<span class="arrow"></span>
+                </p>
+                <h1 class="slider__elements__text--title">
+                  A game about human survival after a nuclear war
+                </h1>
+                <p class="slider__elements__text--jobTitle">
+                  development studio
+                </p>
+                <p class="slider__elements__text--teamName">4A Games</p>
+              </div>
             </div>
+          </div>
         </li>
-    </ul>
+      </ul>
+      <span class="slider__next js--slider__next"></span>
+    </div>
+    <div class="dot__wrapper js--dot__wrapper">
+      <span class="dot js--dot active"></span>
+      <span class="dot js--dot"></span>
+      <span class="dot js--dot"></span>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
