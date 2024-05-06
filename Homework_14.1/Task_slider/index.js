@@ -48,12 +48,10 @@
       prevButton.style.display = "block";
     }
   });
-  console.log(dotList);
 
   dotList.addEventListener("click", function (event) {
     if (event.target.classList.contains("dot")) {
       const dotIndex = [...dotList.children].indexOf(event.target);
-      console.log(dotIndex);
       dotSwitchSlide(dotIndex);
     }
   });
@@ -69,16 +67,12 @@
 
     activeDot.classList.remove("active");
     targetDot.classList.add("active");
-    if (!targetElement.previousElementSibling) {
-      prevButton.style.display = "none";
-    } else {
-      prevButton.style.display = "block";
-    }
 
-    if (!targetElement.nextElementSibling) {
-      nextButton.style.display = "none";
-    } else {
-      nextButton.style.display = "block";
-    }
+    prevButton.style.display = targetElement.previousElementSibling
+      ? "block"
+      : "none";
+    nextButton.style.display = targetElement.nextElementSibling
+      ? "block"
+      : "none";
   }
 })();
