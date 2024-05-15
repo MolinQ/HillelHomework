@@ -3,18 +3,19 @@
   const dotList = document.querySelector(".js--dot__wrapper");
   const prevButton = document.querySelector(".js--slider__prev");
   const nextButton = document.querySelector(".js--slider__next");
+  const activeClassName = "active";
+
 
   if (!list.querySelector(".active").previousElementSibling) {
     prevButton.style.display = "none";
   }
 
   prevButton.addEventListener("click", function () {
-    const activeClassName = "active";
     const activeElement = list.getElementsByClassName(activeClassName)[0];
     const activeDot = dotList.getElementsByClassName(activeClassName)[0];
     const prevDot = activeDot.previousElementSibling;
     const prevElement = activeElement.previousElementSibling;
-
+    
     if (prevElement) {
       activeElement.classList.remove(activeClassName);
       prevElement.classList.add(activeClassName);
@@ -30,7 +31,6 @@
   });
 
   nextButton.addEventListener("click", function () {
-    const activeClassName = "active";
     const activeElement = list.getElementsByClassName(activeClassName)[0];
     const nextElement = activeElement.nextElementSibling;
     const activeDot = dotList.getElementsByClassName(activeClassName)[0];
@@ -57,16 +57,16 @@
   });
 
   function dotSwitchSlide(index) {
-    const activeElement = list.querySelector(".active");
-    const activeDot = dotList.querySelector(".active");
+    const activeElement = list.querySelector(`.${activeClassName}`);
+    const activeDot = dotList.querySelector(`.${activeClassName}`);
     const targetElement = list.querySelectorAll("li")[index];
     const targetDot = dotList.querySelectorAll(".dot")[index];
 
-    activeElement.classList.remove("active");
-    targetElement.classList.add("active");
+    activeElement.classList.remove(activeClassName);
+    targetElement.classList.add(activeClassName);
 
-    activeDot.classList.remove("active");
-    targetDot.classList.add("active");
+    activeDot.classList.remove(activeClassName);
+    targetDot.classList.add(activeClassName);
 
     prevButton.style.display = targetElement.previousElementSibling
       ? "block"
