@@ -1,4 +1,4 @@
-class CountdownTimer {
+class timer {
   constructor(duration, displayElement) {
     this.duration = duration;
     this.displayElement = displayElement;
@@ -38,5 +38,5 @@ class CountdownTimer {
 
 const timerDisplay = document.getElementById("timer");
 const startTime = 85;
-const countdownTimer = new CountdownTimer(startTime, timerDisplay);
+const countdownTimer = new timer(startTime, timerDisplay);
 countdownTimer.start();
