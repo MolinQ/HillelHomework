@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #weather-info {
+    margin-top: 20px;
+  }
+  
+  #update-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
