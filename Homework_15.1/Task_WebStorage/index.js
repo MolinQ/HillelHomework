@@ -1,12 +1,11 @@
 function Todos(date) {
   const { form, input, list } = date;
   const LOCAL_STORAGE_KEY = "name";
-
   this.init = function () {
     this.loadTodo();
-    $(form).on("submit", (event) => {
+    form.addEventListener("submit", (event) => {
       event.preventDefault();
-      const todoName = $(input).val().trim();
+      const todoName = input.value.trim();
       this.saveTodo({
         id: Math.floor(Math.random() * 100),
         name: todoName,
@@ -14,19 +13,19 @@ function Todos(date) {
       });
     });
   };
-
   this.saveTodo = function (todoItem) {
-    const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
-    $(form)[0].reset();
+    const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+    form.reset();
     this.TodolistTemplate(todoItem);
     localStorage.setItem(
       LOCAL_STORAGE_KEY,
-      JSON.stringify([...todoItems, todoItem])
+      JSON.stringify(todoItems ? [...todoItems, todoItem] : [todoItem])
     );
   };
 
   this.TodolistTemplate = function (todoItem) {
-    $(list).append(
+    list.insertAdjacentHTML(
+      "beforeend",
       `<li class="todo-item" data-id="${todoItem.id}">` +
         `<input type="checkbox" ${todoItem.checked ? "checked" : ""}>` +
         `<span class="todo-item__description">` +
@@ -37,19 +36,19 @@ function Todos(date) {
         `</button>` +
         `</li>`
     );
+    const currentElement = document.querySelector(`[data-id="${todoItem.id}"]`);
+    currentElement
+      .querySelector(".todo-item__delete")
+      .addEventListener("click", this.deleteElement);
 
-    const currentElement = $(`[data-id="${todoItem.id}"]`);
     currentElement
-      .find(".todo-item__delete")
-      .on("click", this.deleteElement.bind(this));
-    currentElement
-      .find("input[type='checkbox']")
-      .on("click", this.toggleCheckbox.bind(this));
+      .querySelector("input[type='checkbox']")
+      .addEventListener("click", this.togleCheckbox);
   };
 
-  this.deleteElement = function (event) {
-    const element = $(event.target).closest("li");
-    const id = element.data("id");
+  this.deleteElement = function () {
+    const element = this.closest("li");
+    const id = element.dataset.id;
     const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 
     localStorage.setItem(
@@ -65,44 +64,40 @@ function Todos(date) {
     if (todoItems) {
       todoItems.forEach((item) => {
         this.TodolistTemplate(item);
-        const currentElement = $(`[data-id="${item.id}"]`);
-        const checkbox = currentElement.find("input[type='checkbox']");
-        checkbox.prop("checked", item.checkBox);
+        const currentElement = document.querySelector(`[data-id="${item.id}"]`);
+        const checkbox = currentElement.querySelector("input[type='checkbox']");
+        checkbox.checked = item.checkBox;
         if (item.checkBox) {
-          currentElement.addClass("todo-item--checked");
+          currentElement.classList.add("todo-item--checked");
         }
       });
     }
   };
 
-  this.toggleCheckbox = function (event) {
+  this.togleCheckbox = function () {
     const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    const element = $(event.target).closest("li");
-    const id = element.data("id");
-    const isChecked = $(event.target).prop("checked");
+    const element = this.closest("li");
+    const id = element.dataset.id;
 
     const updatedItems = todoItems.map((item) => {
       if (item.id === Number(id)) {
-        item.checkBox = isChecked;
+        item.checkBox = this.checked;
       }
       return item;
     });
-
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedItems));
 
-    if (isChecked) {
-      element.addClass("todo-item--checked");
+    if (this.checked) {
+      element.classList.add("todo-item--checked");
     } else {
-      element.removeClass("todo-item--checked");
+      element.classList.remove("todo-item--checked");
     }
   };
 }
 
-$(function () {
-  new Todos({
-    form: $(".js--form"),
-    input: $(".js--form__input"),
-    addButton: $(".form__btn"),
-    list: $(".js--todos-wrapper"),
-  }).init();
-});
+new Todos({
+  form: document.querySelector(".js--form"),
+  input: document.querySelector(".js--form__input"),
+  addButton: document.querySelector(".form__btn"),
+  list: document.querySelector(".js--todos-wrapper"),
+}).init();

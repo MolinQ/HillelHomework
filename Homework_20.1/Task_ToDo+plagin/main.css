@@ -68,3 +68,13 @@ h2 {
   width: 95px;
   padding: 10px;
 }
+
+
+.todo-item__showModal {
+  background: #0be69d;
+  border: none;
+  cursor: pointer;
+  width: 95px;
+  padding: 10px;
+  margin-left: 10px;
+}

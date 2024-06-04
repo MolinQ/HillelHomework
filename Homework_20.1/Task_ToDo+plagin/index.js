@@ -1,11 +1,12 @@
 function Todos(date) {
   const { form, input, list } = date;
   const LOCAL_STORAGE_KEY = "name";
+
   this.init = function () {
     this.loadTodo();
-    form.addEventListener("submit", (event) => {
+    $(form).on("submit", (event) => {
       event.preventDefault();
-      const todoName = input.value.trim();
+      const todoName = $(input).val().trim();
       this.saveTodo({
         id: Math.floor(Math.random() * 100),
         name: todoName,
@@ -13,42 +14,52 @@ function Todos(date) {
       });
     });
   };
+
   this.saveTodo = function (todoItem) {
-    const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    form.reset();
+    const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
+    $(form)[0].reset();
     this.TodolistTemplate(todoItem);
     localStorage.setItem(
       LOCAL_STORAGE_KEY,
-      JSON.stringify(todoItems ? [...todoItems, todoItem] : [todoItem])
+      JSON.stringify([...todoItems, todoItem])
     );
   };
 
   this.TodolistTemplate = function (todoItem) {
-    list.insertAdjacentHTML(
-      "beforeend",
+    $(list).append(
       `<li class="todo-item" data-id="${todoItem.id}">` +
-        `<input type="checkbox" ${todoItem.checked ? "checked" : ""}>` +
+        `<input class='checkboxStatus' type="checkbox" ${todoItem.checked ? "checked" : ""}>` +
         `<span class="todo-item__description">` +
         `${todoItem.name}` +
         `</span>` +
         `<button class="todo-item__delete">` +
         `Видалити` +
         `</button>` +
+        `<button class="todo-item__showModal">` +
+        `Відкрити завдання` +
+        `</button>` +
         `</li>`
     );
-    const currentElement = document.querySelector(`[data-id="${todoItem.id}"]`);
-    currentElement
-      .querySelector(".todo-item__delete")
-      .addEventListener("click", this.deleteElement);
 
+    const currentElement = $(`[data-id="${todoItem.id}"]`);
+    const currentname = $(currentElement).children('span').text();
     currentElement
-      .querySelector("input[type='checkbox']")
-      .addEventListener("click", this.togleCheckbox);
+      .find(".todo-item__delete")
+      .on("click", this.deleteElement.bind(this));
+    currentElement
+      .find("input[type='checkbox']")
+      .on("click", this.toggleCheckbox.bind(this));
+
+      currentElement
+          .find(".todo-item__showModal")
+          .on("click", this.showModal.bind(this, todoItem.name));
+
+      this.hideModal();
   };
 
-  this.deleteElement = function () {
-    const element = this.closest("li");
-    const id = element.dataset.id;
+  this.deleteElement = function (event) {
+    const element = $(event.target).closest("li");
+    const id = element.data("id");
     const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 
     localStorage.setItem(
@@ -64,40 +75,57 @@ function Todos(date) {
     if (todoItems) {
       todoItems.forEach((item) => {
         this.TodolistTemplate(item);
-        const currentElement = document.querySelector(`[data-id="${item.id}"]`);
-        const checkbox = currentElement.querySelector("input[type='checkbox']");
-        checkbox.checked = item.checkBox;
+        const currentElement = $(`[data-id="${item.id}"]`);
+        const checkbox = currentElement.find("input[type='checkbox']");
+        checkbox.prop("checked", item.checkBox);
         if (item.checkBox) {
-          currentElement.classList.add("todo-item--checked");
+          currentElement.addClass("todo-item--checked");
         }
       });
     }
   };
 
-  this.togleCheckbox = function () {
+  this.toggleCheckbox = function (event) {
     const todoItems = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    const element = this.closest("li");
-    const id = element.dataset.id;
+    const element = $(event.target).closest("li");
+    const id = element.data("id");
+    const isChecked = $(event.target).prop("checked");
 
     const updatedItems = todoItems.map((item) => {
       if (item.id === Number(id)) {
-        item.checkBox = this.checked;
+        item.checkBox = isChecked;
       }
       return item;
     });
+
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedItems));
 
-    if (this.checked) {
-      element.classList.add("todo-item--checked");
+    if (isChecked) {
+      element.addClass("todo-item--checked");
     } else {
-      element.classList.remove("todo-item--checked");
+      element.removeClass("todo-item--checked");
     }
   };
+
+  this.showModal = function (name) {
+
+        $('.modal-content-text').text(name)
+        $('.modal').css('display', 'block');
+
+  };
+
+  this.hideModal = function() {
+    $('.btn-secondary').click(function () {
+      $('.modal').css('display','none')
+    })
+  }
 }
 
-new Todos({
-  form: document.querySelector(".js--form"),
-  input: document.querySelector(".js--form__input"),
-  addButton: document.querySelector(".form__btn"),
-  list: document.querySelector(".js--todos-wrapper"),
-}).init();
+$(function () {
+  new Todos({
+    form: $(".js--form"),
+    input: $(".js--form__input"),
+    addButton: $(".form__btn"),
+    list: $(".js--todos-wrapper"),
+  }).init();
+});
