@@ -1,3 +1,4 @@
+import '../node_modules/jquery/src/jquery'
 import '../src/main.scss'
 function Todos(date) {
   const { form, input, list } = date;
