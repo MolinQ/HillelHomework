@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/Api/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/textContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/form.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <workItem from="1719484981045" duration="715000" />
       <workItem from="1719830688358" duration="4000" />
       <workItem from="1720962692293" duration="3214000" />
-      <workItem from="1721115930919" duration="2079000" />
+      <workItem from="1721115930919" duration="2467000" />
     </task>
     <servers />
   </component>
