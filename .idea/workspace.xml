@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework_25.1/Task_smile/src/assets/deer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_25.1/Task_smile/src/assets/earth_asia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_25.1/Task_smile/src/assets/jack_o_lantern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_25.1/Task_smile/src/assets/sunglasses.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_24.1/Task_firs_react_app/swapiForm/src/components/form.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
       <recent name="D:\Project\HillelHomework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\HillelHomework\Homework_25.1\Task_smile\src\assets" />
       <recent name="D:\Project\HillelHomework\Homework_21..1\Task_webpack\src" />
     </key>
   </component>
@@ -81,7 +85,10 @@
       <workItem from="1719484981045" duration="715000" />
       <workItem from="1719830688358" duration="4000" />
       <workItem from="1720962692293" duration="3214000" />
-      <workItem from="1721115930919" duration="2467000" />
+      <workItem from="1721115930919" duration="2723000" />
+      <workItem from="1721736629226" duration="266000" />
+      <workItem from="1721736915352" duration="39000" />
+      <workItem from="1721737238646" duration="9597000" />
     </task>
     <servers />
   </component>
