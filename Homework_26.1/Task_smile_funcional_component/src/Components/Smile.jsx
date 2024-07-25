@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button.jsx";
-import { useChooseWinner } from "../helpers/ChooseWinner.js";
+import { useChooseWinner } from "../helpers/useChooseWinner.js";
 
 function Smile(props) {
     const { onResultUpdate } = props;
