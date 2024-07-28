@@ -1,0 +1,9 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+.text-color {
+    color: white;
+}
+
+* {
+    transition: 0.2s ease-out;
+}
