@@ -1,0 +1,11 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+.post-wrapper {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+}
+
+.input-style {
+  width: 100%;
+}
