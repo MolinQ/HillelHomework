@@ -4,7 +4,7 @@ import ButtonSubmit from "./ButtonSubmit.jsx";
 import * as Yup from 'yup';
 
 function SearchForm(props) {
-    const {onSubmit} = props
+    const {onSubmit} = props;
 
     const validationSchema = Yup.object().shape({
         postText: Yup.string()

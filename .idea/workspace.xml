@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/ButtonSubmit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/ButtonSubmit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/SearchForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/SearchForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +103,7 @@
       <workItem from="1721901837973" duration="5333000" />
       <workItem from="1722065466617" duration="8830000" />
       <workItem from="1722158012005" duration="8508000" />
-      <workItem from="1722325629865" duration="8356000" />
+      <workItem from="1722325629865" duration="8525000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
-
 function Post(props) {
-    const {onDelete,text} = props
+    const {onDelete,text} = props;
     return(
         <div className='d-flex justify-content-between align-items-center post-wrapper m-3'>
             <div className='text-wrapper'>
