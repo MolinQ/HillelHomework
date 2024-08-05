@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/ButtonSubmit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/ButtonSubmit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/Post.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/SearchForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_28.1/Task_TODOS_with_formik/src/components/SearchForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,23 +23,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "21.7.1",
-    "javascript.nodejs.core.library.typings.version": "20.14.12",
-    "last_opened_file_path": "D:/Project/HillelHomework/Homework_28.1/Task_TODOS_with_formik/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.7.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.12&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/HillelHomework/Homework_28.1/Task_TODOS_with_formik/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\HillelHomework\Homework_28.1\Task_TODOS_with_formik\src" />
@@ -103,7 +98,9 @@
       <workItem from="1721901837973" duration="5333000" />
       <workItem from="1722065466617" duration="8830000" />
       <workItem from="1722158012005" duration="8508000" />
-      <workItem from="1722325629865" duration="8525000" />
+      <workItem from="1722325629865" duration="9147000" />
+      <workItem from="1722511284739" duration="713000" />
+      <workItem from="1722854022687" duration="941000" />
     </task>
     <servers />
   </component>
