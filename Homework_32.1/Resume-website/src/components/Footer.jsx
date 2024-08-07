@@ -6,8 +6,9 @@ function Footer() {
     return (
         <Box component="footer" py={3} textAlign="center">
             <Typography variant="body1">
-                Contacts: kirillaidr@gmail.com <br/>
-                phone: +0663908831
+                Contacts: <br/>
+                Email: kirillaidr@gmail.com <br/>
+                Phone: +0663908831
             </Typography>
         </Box>
     );
