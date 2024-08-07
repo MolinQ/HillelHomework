@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +50,11 @@
       <recent name="D:\Project\HillelHomework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\HillelHomework\Homework_32.1" />
       <recent name="D:\Project\HillelHomework\Homework_27.1\Task_SPA_app\src\pages\ui" />
       <recent name="D:\Project\HillelHomework\Homework_27.1\Task_SPA_app\src\feature\ChangeColor" />
       <recent name="D:\Project\HillelHomework\Homework_27.1\Task_SPA_app\src\shared" />
       <recent name="D:\Project\HillelHomework\Homework_27.1\Task_SPA_app\src\model" />
-      <recent name="D:\Project\HillelHomework\Homework_25.1\Task_smile\src\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,7 +101,9 @@
       <workItem from="1722158012005" duration="8508000" />
       <workItem from="1722325629865" duration="9147000" />
       <workItem from="1722511284739" duration="713000" />
-      <workItem from="1722854022687" duration="3769000" />
+      <workItem from="1722854022687" duration="4071000" />
+      <workItem from="1723025262435" duration="3267000" />
+      <workItem from="1723028590663" duration="20000" />
     </task>
     <servers />
   </component>
