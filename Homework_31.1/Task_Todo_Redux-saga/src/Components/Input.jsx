@@ -18,7 +18,7 @@ function TodoInput()  {
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                placeholder="Enter your todo"
+                placeholder="Enter your text"
             />
             <button className='btn btn-success' onClick={handleAddTodo}>Add Todo</button>
         </div>

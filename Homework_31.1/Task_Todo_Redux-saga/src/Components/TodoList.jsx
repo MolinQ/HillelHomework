@@ -17,12 +17,12 @@ function TodoList() {
         <div>
             <h2>Todo List</h2>
             <TodoInput />
+            <button className='btn btn-primary' onClick={handleClearCompleted}>Clear completed task</button>
             <ul>
                 {todos.map(todo => (
                     <TodoItem key={todo.id} todo={todo} />
                 ))}
             </ul>
-            <button className='btn btn-primary' onClick={handleClearCompleted}>Clear Completed</button>
         </div>
     );
 }

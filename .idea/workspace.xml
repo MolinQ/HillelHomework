@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/TodoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/TodoList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
       <workItem from="1722854022687" duration="4071000" />
       <workItem from="1723025262435" duration="3267000" />
       <workItem from="1723028590663" duration="808000" />
-      <workItem from="1723297879634" duration="3468000" />
+      <workItem from="1723297879634" duration="3769000" />
     </task>
     <servers />
   </component>
