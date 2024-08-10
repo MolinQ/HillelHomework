@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTodos, clearCompleted } from '../core/actions/todoActions.js';
-import TodoItem from '../Components/TodoItems.jsx';
-import TodoInput from '../Components/Input.jsx';
+import TodoItem from './/TodoItems.jsx';
+import TodoInput from './/Input.jsx';
 function TodoList() {
     const dispatch = useDispatch();
     const todos = useSelector(state => state.todos);
