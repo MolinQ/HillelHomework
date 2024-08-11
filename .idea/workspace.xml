@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/page/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_23.1/Task_Api_todos/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_30.1/swapi_redux-thunk/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_30.1/swapi_redux-thunk/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_18.1/Task_timer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_18.1/Task_timer/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <workItem from="1723297879634" duration="5053000" />
       <workItem from="1723322393825" duration="15020000" />
       <workItem from="1723364524749" duration="3862000" />
-      <workItem from="1723368463185" duration="4935000" />
+      <workItem from="1723368463185" duration="5459000" />
     </task>
     <servers />
   </component>
