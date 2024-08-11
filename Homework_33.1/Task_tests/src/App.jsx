@@ -1,4 +1,3 @@
-import React from 'react';
 import store from "./core/store.js";
 import {Provider} from "react-redux";
 import SwapiList from "./components/SwapiList.jsx";

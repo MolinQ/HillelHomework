@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbeaf9e-4ca1-43c8-9cf4-445bf822b64c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/components/Input.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/components/SwapiList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/core/slices/swapiSlices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/core/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/core/swapiThunks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework_33.1/Task_tests/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/components/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/TodoItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/components/TodoItems.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/Components/TodoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_31.1/Task_Todo_Redux-saga/src/components/TodoList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework_30.1/swapi_redux-thunk/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Homework_30.1/swapi_redux-thunk/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,30 +40,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;21.7.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.12&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/HillelHomework/Homework_28.1/Task_TODOS_with_formik/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "21.7.1",
+    "javascript.nodejs.core.library.typings.version": "20.14.12",
+    "last_opened_file_path": "D:/Project/HillelHomework/Homework_33.1/Task_tests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\HillelHomework\Homework_33.1\Task_tests" />
       <recent name="D:\Project\HillelHomework\Homework_28.1\Task_TODOS_with_formik\src" />
       <recent name="D:\Project\HillelHomework\Homework_26.1\Task_smile_funcional_component\src\assets" />
       <recent name="D:\Project\HillelHomework\Homework_26.1\Task_smile_funcional_component\src" />
       <recent name="D:\Project\HillelHomework\Homework_23.1\Task_Api_todos" />
-      <recent name="D:\Project\HillelHomework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\HillelHomework\Homework_30.1\swapi_redux-thunk\src\core" />
@@ -107,7 +121,7 @@
       <workItem from="1723025262435" duration="3267000" />
       <workItem from="1723028590663" duration="808000" />
       <workItem from="1723297879634" duration="5053000" />
-      <workItem from="1723322393825" duration="5695000" />
+      <workItem from="1723322393825" duration="14242000" />
     </task>
     <servers />
   </component>
