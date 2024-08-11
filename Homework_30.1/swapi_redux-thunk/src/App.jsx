@@ -6,8 +6,8 @@ import Footer from "./components/Footer.jsx";
 import Input from "./components/Input.jsx";
 function App() {
     return (
-    <Provider store={store}>
-        <div className='container-md '>
+    <Provider store={store} >
+        <div className='container-md ' >
             <h1>Swapi</h1>
             <Input />
             <SwapiList />
